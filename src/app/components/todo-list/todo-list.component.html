@@ -1,0 +1,8 @@
+<md-card>
+  <md-list>
+    <md-list-item *ngFor="let todo of todos">
+      <md-checkbox [checked]="todo.completed"></md-checkbox>
+      {{todo.name}}
+    </md-list-item>
+  </md-list>
+</md-card>
