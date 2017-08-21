@@ -39,12 +39,14 @@ import {
 import {AppComponent} from './app.component';
 import {TodoListComponent} from './components/todo-list/todo-list.component';
 import {AddNewTodoComponent} from './components/add-new-todo/add-new-todo.component';
+import {TodoListItemComponent} from './components/todo-list/todo-list-item/todo-list-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
-    AddNewTodoComponent
+    AddNewTodoComponent,
+    TodoListItemComponent
   ],
   imports: [
     BrowserModule,

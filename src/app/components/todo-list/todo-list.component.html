@@ -1,11 +1,7 @@
 <md-card>
   <md-list>
-    <md-list-item *ngFor="let todo of todos"
-                  [ngClass]="{'completed': todo.completed}">
-      <md-checkbox [(ngModel)]='todo.completed'></md-checkbox>
-      {{todo.name}}
-    </md-list-item>
+    <app-todo-list-item
+      *ngFor="let todo of todos"
+      [todo]="todo"></app-todo-list-item>
   </md-list>
 </md-card>
-
-
